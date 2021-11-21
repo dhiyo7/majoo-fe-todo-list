@@ -50,7 +50,7 @@ const Modal = (props) => {
                     <button style={style.button("lightGreen")} onClick={() => edit(data)}>
                       EDIT
                     </button>
-                    <button style={style.button("pink")} onClick={() =>deleteList(data)}>HAPUS</button>
+                    {data.status === 0 && (<button style={style.button("pink")} onClick={() =>deleteList(data)}>HAPUS</button>)}
                   </div>
                 </div>
               </>
