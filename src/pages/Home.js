@@ -22,7 +22,7 @@ const Home = () => {
 
   useEffect(() => {
     dispatch(fetchInitList());
-  }, []);
+  }, [dispatch]);
 
   const createNewList = () => {
     const data = {
@@ -119,14 +119,14 @@ const Home = () => {
         variant={"not_finished"}
         setVariant={setVariant}
         title={"Belum Selesai"}
-        data={listReducers.listAll.filter((item) => item.status == 0)}
+        data={listReducers.listAll.filter((item) => item.status === 0)}
         onClick={(value) => showDetail(value)}
         clickAdd={openModalAdd}
       />
       <List
         variant={"finished"}
         title={"Selesai"}
-        data={listReducers.listAll.filter((item) => item.status == 1)}
+        data={listReducers.listAll.filter((item) => item.status === 1)}
         onClick={(value) => showDetail(value)}
       />
     </div>

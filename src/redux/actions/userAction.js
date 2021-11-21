@@ -1,5 +1,4 @@
 import req from "../../engine/axios";
-import reportWebVitals from "../../reportWebVitals";
 
 export const fetchInitList = () => {
   return async (dispatch) => {

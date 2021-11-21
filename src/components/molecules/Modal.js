@@ -145,8 +145,8 @@ const style = {
     width: "100%",
     height: "100%",
     overflow: "auto",
-    backgroundColor: "rgba(0,0,0)",
-    backgroundColor: "rgba(0,0,0,0.4)",
+    backgroundColor: "rgba(0,0,0)", // eslint-disable-line
+    backgroundColor: "rgba(0,0,0,0.4)", 
   },
   modalContent: {
     backgroundColor: "#fefefe",
